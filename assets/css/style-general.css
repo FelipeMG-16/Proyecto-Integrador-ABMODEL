@@ -2,6 +2,12 @@
 :root{
     --fuenteHeading: 'DM Serif Display', serif;
     --fuenteParrafo: 'Cormorant Garamond', serif;
+
+    /*Colores*/
+    --ColorPrincipal: #037E8C;
+    --ColorSecundario: #13C0E5;
+    --ColorClaro: #f4f4f2;
+    --ColorContraste: #7EC544;
 }
 
 * {  /*Margen y padding general*/
@@ -20,7 +26,8 @@ body { /*Estilos para el body*/
 
 h1 { /*Estilos H1*/
 
-    font-family: 'DM Serif Display', serif;
+    font-family: var(--fuenteHeading);
+      font-size:5rem; 
     text-align: center;
     margin-bottom: 60px;
     color: #F4F4F2 ;
@@ -33,11 +40,17 @@ h1 { /*Estilos H1*/
 
 h2 { /*Estilos H2*/
 
-    font-family: 'DM Serif Display', serif;
-    font-size: 2.5rem;
+    font-family: var(--fuenteHeading);
+    font-size: 2.5rem; /*2rem*/
     text-align: center;
     margin-bottom: 60px;
     
+}
+
+.h2-centrar{
+    color: var(--ColorClaro);
+    text-align: center;
+
 }
 
 h3 { /*Estilos H3*/
@@ -64,7 +77,7 @@ h5 { /*Estilos H5*/
 
 p { /*Estilos para párrafos*/
 
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--fuenteParrafo)
     
 }
 
