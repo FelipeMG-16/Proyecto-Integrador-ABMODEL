@@ -1,28 +1,38 @@
-* {
+/* Fuentes */
+:root{
+    --fuenteHeading: 'DM Serif Display', serif;
+    --fuenteParrafo: 'Cormorant Garamond', serif;
+}
+
+* {  /*Margen y padding general*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Cormorant Garamond', serif;
+body { /*Estilos para el body*/
+
+    font-family: var(--fuenteParrafo);
     font-size: 1.5rem;
+    background-color: #f4f4f2;
 }
 
 
+h1 { /*Estilos H1*/
 
-h1 {
     font-family: 'DM Serif Display', serif;
-    font-size: 5rem;
     text-align: center;
     margin-bottom: 60px;
     color: #F4F4F2 ;
 }
 
-.h2{
+.h2{ /*Estilos H2 - Color*/
+
     color: #F4F4F2;
 }
-h2 {
+
+h2 { /*Estilos H2*/
+
     font-family: 'DM Serif Display', serif;
     font-size: 2.5rem;
     text-align: center;
@@ -30,33 +40,36 @@ h2 {
     
 }
 
-h3 {
+h3 { /*Estilos H3*/
+
     font-family: 'DM Serif Display', serif;
     text-align: center;
     margin-bottom: 60px;
 }
 
-h4 {
+h4 { /*Estilos H4*/
+
     font-family: 'DM Serif Display', serif;
     text-align: center;
     margin-bottom: 60px;
 }
 
-h5 {
+h5 { /*Estilos H5*/
+
     font-family: 'DM Serif Display', serif;
     text-align: center;
     margin-bottom: 60px;
 }
 
 
+p { /*Estilos para párrafos*/
 
-
-p {
     font-family: 'Cormorant Garamond', serif;
     
 }
 
-nav{
+nav{ /*Estilo para nav*/
+
     text-align: right;
     padding: 30px 50px 0 0;
     position: absolute;
@@ -64,7 +77,8 @@ nav{
 }
 
 
-header .textos-header{
+header .textos-header{ /* Estilos Textos del header*/
+
     display: flex;
     height: 270px;
     width: 100%;
@@ -75,8 +89,30 @@ header .textos-header{
    
 }
 
+/* Estilos para las tarjetas de "Quienes Sómos"*/
 
-
+.bg-azul{
+    /*background-color: #037e8cce;*/
+    background-image: linear-gradient(#037e8cce,#13C0E5,#f4f4f2);
+  }
+  
+.bg-azulclaro{
+  
+    background-color: #13C0E5;;
+}
+  
+  .txtBlanco{
+    color:#f4f4f2;
+}
+  
+  .txtNegro{
+    color: #000000;
+  }
+  
+  .bg-claro{
+  
+    background-image: linear-gradient(#f4f4f2, #13C0E5,#037e8cce);
+  }
 
 
 
