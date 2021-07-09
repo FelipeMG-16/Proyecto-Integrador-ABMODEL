@@ -50,12 +50,12 @@
             <h2 class="hilo">Abre un hilo nuevo</h2>
             <div class="margen-2 info">
               <label for="floatingTextarea2">Escribe el titulo de tu pregunta</label>
-              <input type="text" name="Pregunta" id="Pregunta" style="margin-bottom: 2rem;" placeholder="Ej. ¿Que es HTML?"> 
+              <input type="text" name="Pregunta" id="TPregunta" style="margin-bottom: 2rem;" placeholder="Ej. ¿Que es HTML?"> 
                 <div class="margen-but form-floating">
-                <textarea class="form-control" placeholder="Escribe una breve descripcion" id="floatingTextarea2" style="height: 100px"></textarea>
+                <textarea class="form-control" placeholder="Escribe una breve descripcion" id="DPregunta" style="height: 100px"></textarea>
                 
             </div>
-            <button type="button" class="boton btn btn-secondary" style="color:#F4F4F2; font-size: 24px; border-radius: 60px; font-family: 'Cormorant Garamond', serif;">Añadir</button>
+            <button type="button" class="boton btn btn-secondary" id="btn_CrearForo" style="color:#F4F4F2; font-size: 24px; border-radius: 60px; font-family: 'Cormorant Garamond', serif;">Añadir</button>
             </div>
             <hr>
             <!-- Seccion para crear foros -->
@@ -67,9 +67,10 @@
             </div>
         </div>
         <!--Seccion de busqueda-->
-        <main class="margen-2">
+        <main class="margen-2" id="M_hilos">
             <h2 class="hilo">Foros</h2>
-            <!-- Primer Foro -->
+            <div class="hilos" id="M_hilos">
+                <!-- Primer Foro -->
             <div class="card mb-3" style="max-width: 100%;">
               <div class="row g-3">
                 <div class="col-md-2">
@@ -104,6 +105,7 @@
                   </div>
                 </div>
               </div>
+            </div>
             <!-- Segundo Foro -->
              <!-- Tercer Foro -->
                 <!-- Segundo Foro -->
@@ -124,6 +126,8 @@
                 </div>
                
             <!-- Tercer Foro -->
+            </div>
+            
                   </main>
 
     </div>
@@ -139,7 +143,7 @@
 
      <!--Fin del footer-->
    
-
+<script src="/assets/js/js-foro.js"></script>
 
 </body>
 </html>
